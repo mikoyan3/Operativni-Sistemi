@@ -9,13 +9,13 @@
 _ZN5Riscv5TableEv:
         j ecallHandle
         j timerHandle
-        nop
-        nop
-        nop
-        nop
-        nop
-        nop
-        nop
+        csrw mscratch, -1
+        csrw mscratch, -1
+        csrw mscratch, -1
+        csrw mscratch, -1
+        csrw mscratch, -1
+        csrw mscratch, -1
+        csrw mscratch, -1
         j consoleHandle
 
 ecallHandle:
